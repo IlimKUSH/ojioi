@@ -13,11 +13,17 @@ const ModeToggle = () => {
 	useEffect(() => {
 		setMounted(true)
 	}, []);
+
+	if (!mounted) return null;
+
+	const toggleTheme = () => {
+		setTheme(theme === "dark" ? "light" : "dark");
+	};
 	
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="ghost">
+				<Button variant="ghost" className='focus-visible:ring-0 focus-visible:ring-offset-0' onClick={toggleTheme}>
 					{theme === "system" ? <SunMoon /> : theme === "dark" ? <MoonIcon /> : <SunIcon />}
 				</Button>
 			</DropdownMenuTrigger>
