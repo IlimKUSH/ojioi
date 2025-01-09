@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
-import {APP_DESCRIPTION, APP_NAME, SERVER_URL} from "@/lib/constants";
-import {ThemeProvider} from "next-themes";
+import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
