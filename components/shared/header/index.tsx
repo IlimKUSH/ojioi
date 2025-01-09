@@ -1,9 +1,6 @@
-import { ShoppingCart, UserIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import {APP_NAME} from "@/lib/constants";
-import {Button} from "@/components/ui/button";
-import ModeToggle from "@/components/shared/header/mode-toggle";
 import Menu from "@/components/shared/header/menu";
 
 const Header = () => {

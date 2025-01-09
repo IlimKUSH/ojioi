@@ -1,7 +1,7 @@
 "use client";
 
 import {useTheme} from "next-themes";
-import {DropdownMenu, DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuContent} from "@/components/ui/dropdown-menu";
+import {DropdownMenu, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {Button} from "@/components/ui/button";
 import {SunIcon, MoonIcon, SunMoon} from "lucide-react"
 import {useEffect, useState} from "react";

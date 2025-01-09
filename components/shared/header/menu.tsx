@@ -1,7 +1,7 @@
 import ModeToggle from "@/components/shared/header/mode-toggle";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
-import {EllipsisIcon, EllipsisVertical, ShoppingCart, UserIcon} from "lucide-react";
+import {EllipsisVertical, ShoppingCart, UserIcon} from "lucide-react";
 import {Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 
 const Menu = () => {
