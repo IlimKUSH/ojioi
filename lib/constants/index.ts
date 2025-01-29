@@ -6,3 +6,9 @@ export const SignInDefaultValues = {
     email: "",
     password: "",
 }
+export const SignUpDefaultValues = {
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+}
